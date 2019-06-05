@@ -1,0 +1,197 @@
+header
+    position: relative
+    width: 100%
+    height: 100%
+.header
+    &__menu
+        &-paragraph
+            &:hover
+                color: #c7b299
+        a
+            font-size: 14px
+            font-weight: 300
+            color: #ffffff
+            text-decoration: none
+            padding: 0px 5px
+            &:hover
+                cursor: pointer 
+        &-mobile
+            display: none
+        &-btn
+            display: none
+            width: 50px
+            height: 50px
+            background: #ffffff
+            border-radius: 50px
+            position: relative
+        &-line
+            display: block
+            width: 20px
+            height: 3px
+            background: black
+            position: absolute
+            top: 50%
+            left: 50%
+            margin-left: -10px
+            margin-top: -1px
+            &:before
+                content: ''
+                display: block
+                width: 20px
+                height: 3px
+                transform: translateY(-5px)
+                background: black
+            &:after
+                content: ''
+                display: block
+                width: 20px
+                height: 3px
+                transform: translateY(2px)
+                background: black
+    &__nav
+        display: block
+        position: absolute
+        left: 50%
+        top: 1em
+        transform: translate(-50%, 0)
+        &-block
+            width: 1082px
+            display: flex
+            justify-content: space-around
+            align-items: center
+    &__block
+        display: flex
+        width: 100%
+        height: 969px
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        color: #ffffff
+        background: linear-gradient(rgba(0, 0, 0, 0.3) ), url('./../img/header/header_photo.jpg') 
+        background-size: cover
+        background-position: center
+    &__above
+        &-text
+            font-size: 36px
+            font-weight: 500
+    &__title
+        &-text
+            font-size: 52px
+            font-weight: 400
+    &__subtext
+        font-size: 16px
+        font-weight: 300
+    &__btn
+        margin-top: 50px
+        padding: 15px 30px
+        font-size: 14px
+        font-weight: 400
+        line-height: 23px
+        text-transform: uppercase
+        color: #ffffff
+        border: none
+        box-shadow: inset 0 -3px 0 #736357
+        background-color: #998675  
+        &:hover
+            cursor: pointer 
+
+.slider
+    text-align: center
+    &-dots
+        display: flex
+        align-items: center
+        position: absolute
+        left: 50%
+        bottom: 1em
+        transform: translate(-50%,0)
+        &:hover
+            cursor: pointer
+
+.dot
+    width: 9px
+    height: 9px
+    background-color: #969494
+    border-radius: 50%
+    margin-right: 8px
+    &-active
+        width: 13px
+        height: 13px
+        border: 2px solid #d3c1ad
+        background-color: transparent
+
+.prev
+    position: absolute
+    top: 28em
+    left: 5%
+    &:hover
+        cursor: pointer
+.next
+    position: absolute
+    top: 28em
+    right: 5%
+    &:hover
+        cursor: pointer
+.arrow
+    &-left
+        width: 40px
+        height: 73px
+        background: url('./../img/header/arrow_left.png')
+    &-right
+        width: 40px
+        height: 73px
+        background: url('./../img/header/arrow_right.png')
+
+.background
+    &__two
+        background: linear-gradient(rgba(0, 0, 0, 0.3) ), url('./../img/header/header_photo_2.jpg')
+    &__three
+        background: linear-gradient(rgba(0, 0, 0, 0.3) ), url('./../img/header/header_photo_3.jpg')
+    &__four
+        background: linear-gradient(rgba(0, 0, 0, 0.2) ), url('./../img/header/header_photo_4.jpg')
+    &__five
+        background: linear-gradient(rgba(0, 0, 0, 0.2) ), url('./../img/header/header_photo_5.jpg')
+
+
+@media (max-width: 1082px)
+    .header
+        &__nav
+            &-block
+                width: 891px
+        &__block
+            background-position: center
+@media (max-width: 891px)
+    .header
+        &__menu
+            display: none
+            &-mobile
+                display: block
+            &-btn
+                display: block
+                box-shadow: 1px 1px 10px rgba(0,0,0,.4)
+        &__icons
+            display: none
+        &__nav
+            &-block
+                width: 668px
+@media (max-width: 691px)
+    .header
+        &__above
+            &-text
+                font-size: 20px
+        &__nav
+            &-block
+                width: 300px
+        &__title
+            &-text
+                font-size: 30px
+        &__block
+            height: 600px
+        &__subtext
+            padding: 10px
+    .prev
+        display: none
+    .next
+        display: none
+    .slider
+        &-dots
+            bottom: 8em

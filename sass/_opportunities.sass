@@ -1,0 +1,80 @@
+.opportunities
+    &__wrap
+        display: flex
+        justify-content: center
+        align-items: center
+        text-align: center
+        padding-top: 80px
+        padding-bottom: 80px
+    &__icon
+        width: 44px
+        height: 40px
+    &__blocks
+        &-one
+            &::before
+                content: ''
+                width: 44px
+                height: 40px
+                margin: auto
+                display: block
+                background: url('../img/opportunities/icon__1.0.png')
+            &:hover::before
+                background: url('../img/opportunities/icon__1.1.png')
+        &-two
+            &::before
+                content: ''
+                width: 44px
+                height: 40px
+                margin: auto
+                display: block
+                background: url('../img/opportunities/icon__2.0.png')
+            &:hover::before
+                background: url('../img/opportunities/icon__2.1.png')
+        &-three
+            &::before
+                content: ''
+                width: 44px
+                height: 40px
+                margin: auto
+                display: block
+                background: url('../img/opportunities/icon__3.0.png')
+            &:hover::before
+                background: url('../img/opportunities/icon__3.1.png')
+        &-four
+            &::before
+                content: ''
+                width: 44px
+                height: 40px
+                margin: auto
+                display: block
+                background: url('../img/opportunities/icon__4.0.png')
+            &:hover::before
+                background: url('../img/opportunities/icon__4.1.png')
+        &:hover
+            cursor: pointer
+            color: #c7b299
+        &::after
+            content: ''
+            display: block
+            width: 70px
+            height: 3px  
+            background-color: #f1eee9
+            margin: auto
+        &:hover::after
+            background-color: #c7b299
+    &__title
+        font-size: 22px
+        font-weight: 400
+    &__text
+        font-size: 14px
+        font-weight: 300
+        line-height: 24px
+        color: #8c8c8c
+        margin: 25px
+
+@media (max-width: 891px)
+    .opportunities
+        &__wrap
+            flex-direction: column
+        &__blocks
+            padding-top: 20px
