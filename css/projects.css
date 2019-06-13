@@ -1,0 +1,18 @@
+.latest__projects-wrap {
+  padding-top: 80px;
+  text-align: center;
+}
+
+.latest__projects-title {
+  font-size: 30px;
+  font-weight: 400;
+  color: #555555;
+}
+
+.latest__projects-subtitle {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  color: #8c8c8c;
+}
+/*# sourceMappingURL=projects.css.map */
