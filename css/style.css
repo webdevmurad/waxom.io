@@ -1124,6 +1124,62 @@ li {
   position: relative;
 }
 
+@media (max-width: 1082px) {
+  .block__posts-slide {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .arrows__back {
+    left: 47%;
+  }
+  .arrows__forward {
+    right: 47%;
+  }
+}
+
+@media (max-width: 768px) {
+  .block__posts-text {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .arrows__back {
+    left: 46%;
+  }
+  .arrows__forward {
+    right: 46%;
+  }
+}
+
+@media (max-width: 425px) {
+  .block__posts-text {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .arrows__back {
+    left: 43%;
+  }
+  .arrows__forward {
+    right: 43%;
+  }
+}
+
+@media (min-width: 320px) {
+  .arrows__back {
+    left: 42%;
+  }
+  .arrows__forward {
+    right: 42%;
+  }
+}
+
 .sponsor {
   background: url("../img/sponsor/Background.png") no-repeat;
   background-size: cover;

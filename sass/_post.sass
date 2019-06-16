@@ -92,7 +92,6 @@
         filter: grayscale(3.0)
         &:hover
             cursor: pointer
-.arrows
     &__forward
         position: absolute
         bottom: 15%
@@ -117,3 +116,44 @@
     &__post
         width: 100%
         position: relative
+@media (max-width: 1082px)
+    .block
+        &__posts
+            &-slide
+                justify-content: center
+                align-items: center
+                flex-direction: column
+    .arrows
+        &__back
+            left: 47%
+        &__forward
+            right: 47%
+@media (max-width: 768px)
+    .block
+        &__posts
+            &-text
+                margin-left: 100px
+                margin-right: 100px
+    .arrows
+        &__back
+            left: 46%
+        &__forward
+            right: 46%
+@media (max-width: 425px)
+    .block
+        &__posts
+            &-text
+                margin-left: 50px
+                margin-right: 50px
+    .arrows
+        &__back
+            left: 43%
+        &__forward
+            right: 43%
+@media (min-width: 320px)
+    .arrows
+        &__back
+            left: 42%
+        &__forward
+            right: 42%
+    
