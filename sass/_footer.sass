@@ -1,0 +1,49 @@
+.footer
+    background-color: #111111
+    &__blocks
+        display: flex
+        justify-content: space-between
+        padding-top: 40px
+        padding-bottom: 40px
+        color: #252525
+        font-family: Montserrat
+        font-size: 13px
+        font-weight: 300
+        line-height: 20px
+    &__left
+        display: flex
+    &__left p
+        padding-right: 10px
+        padding-left: 10px
+        border-right: 2px solid #252525
+        &:last-child
+            border: none
+    &__right
+        display: flex
+    &__right p
+        padding-right: 10px
+        padding-left: 10px
+        border-right: 2px solid #252525
+        &:last-child
+            border: none
+    
+.waxom
+    color: #959595
+.questions
+    color: #c7b299
+.theme
+    color: #959595
+.market
+    color: #959595
+
+@media (max-width: 691px)
+    .footer
+        &__blocks
+            flex-direction: column
+            justify-content: center
+            align-items: center
+        &__left 
+            flex-direction: column
+            text-align: center
+        &__left p
+            border-right: none

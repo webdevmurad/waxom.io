@@ -1,0 +1,71 @@
+.mobile
+    &__blocks
+        display: flex
+        padding-top: 80px
+    &__block
+        &-left
+            display: flex
+            flex-direction: column
+            justify-content: center
+        &-title
+            color: #555555
+            font-family: "Raleway - Semi Bold"
+            font-size: 30px
+            font-weight: 400
+        &-text
+            margin-top: 40px
+            margin-right: 185px
+            color: #8c8c8c
+            font-family: Montserrat
+            font-size: 16px
+            font-weight: 300
+            line-height: 28px
+        &-paragraph
+            color: #8c8c8c
+            font-family: Montserrat
+            font-size: 16px
+            font-weight: 300
+            line-height: 32px
+.block
+    &-img
+        &:hover
+            cursor: pointer
+li 
+    list-style: none
+    background: url('../img/mobile/arrow.png') no-repeat 
+    background-position: left
+.list
+    &-paragraph
+
+    &-text
+        margin: 0
+        margin-left: 50px
+
+
+@media (max-width: 891px)
+    .mobile
+        &__blocks
+            flex-direction: column
+            align-items: center
+        &__block
+            &-left
+                align-items: center
+            &-text
+                text-align: center
+                margin-right: 50px
+                margin-left: 50px
+@media (max-width: 400px)
+    .block
+        &-img
+            width: 300px
+    .mobile
+        &__block
+            &-title
+                text-align: center
+            &-text
+                margin-top: 20px
+                margin-right: 20px
+                margin-left: 20px
+            &-paragraph
+                font-size: 14px
+

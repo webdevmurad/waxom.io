@@ -1,0 +1,44 @@
+.video
+    &__block
+        background: url('../img/video/Background.png') no-repeat
+        text-align: center
+        &-wrap
+            padding-top: 200px
+            padding-bottom: 120px
+        
+        &-title
+            color: #ffffff
+            font-size: 30px
+            font-weight: 500
+            margin-top: 40px
+        &-text
+            color: #ffffff
+            font-size: 16px
+            font-weight: 300
+            line-height: 28px
+            margin-top: 30px
+            margin-left: 340px
+            margin-right: 340px
+        &-timer
+            margin-top: 40px
+            color: #c7b299
+            font-size: 14px
+            font-weight: 400
+            line-height: 24px
+.play
+    &-icon
+        &:hover
+            cursor: pointer
+
+@media (max-width: 1082px)
+    .video
+        &__block
+            &-text
+                margin-left: 200px
+                margin-right: 200px
+@media (max-width: 691px)
+    .video
+        &__block
+            &-text
+                margin-left: 50px
+                margin-right: 50px

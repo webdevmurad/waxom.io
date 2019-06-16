@@ -1,0 +1,160 @@
+.info
+    background-color: #191919
+    &__block
+        display: flex
+        align-items: center
+        justify-content: center
+        padding-top: 80px
+        padding-bottom: 80px
+    &__blocks
+        flex-basis: 40%
+    &__logo
+        &:hover
+            cursor: pointer
+        &-text
+            color: #555555
+            margin-top: 30px
+            font-family: Montserrat
+            font-size: 14px
+            font-weight: 300
+            line-height: 24px
+    &__read
+        margin-top: 30px
+        color: #d1d1d1
+        font-family: Montserrat
+        font-size: 14px
+        font-weight: 400
+        line-height: 20px
+        &:hover
+            cursor: pointer
+            color: #c7b299
+
+.waxom
+    &__block
+        margin-right: 20px
+.recent
+    &__blocks
+        padding-top: 60px
+        margin-right: 30px
+.twitter
+    &__block
+        padding-top: 70px
+        margin-right: 20px
+        &:hover
+            cursor: pointer
+.mobile
+    &__block
+        margin-top: -20px
+        
+.recent
+    &__block
+        padding-top: 15px
+        padding-bottom: 15px
+        border-bottom: 1px solid #252525
+        &:hover
+            cursor: pointer
+        &:last-child
+            border: none
+        &:hover .recent__data
+            color: #ffffff
+        &:hover .recent__text
+            color: #c7b299
+
+    &__title
+        color: #ffffff
+        font-family: Raleway
+        font-size: 24px
+        font-weight: 700
+    &__data
+        color: #363636
+        margin-top: 5px
+        font-family: Montserrat
+        font-size: 12px
+        font-weight: 300
+        line-height: 20px
+    &__text
+        color: #555555
+        font-family: Montserrat
+        font-size: 14px
+        font-weight: 300
+        line-height: 20px
+.twitter
+    &__title
+        color: #ffffff
+        font-family: Raleway
+        font-size: 24px
+        font-weight: 700
+    &__text
+        color: #555555
+        margin-top: 10px
+        font-family: Montserrat
+        font-size: 14px
+        font-weight: 300
+        line-height: 20px
+    &__time 
+        color: #363636
+        font-family: Montserrat
+        font-size: 12px
+        font-weight: 300
+        line-height: 20px
+    &__message
+        padding-top: 15px
+        padding-bottom: 15px
+        border-bottom: 1px solid #252525
+        &:last-child
+            border: none
+    
+.widget
+    &__title
+        color: #ffffff
+        font-family: Raleway
+        font-size: 24px
+        font-weight: 700
+    &__img
+        &-block
+            margin-top: 10px
+            &:hover
+                cursor: pointer
+.link
+    color: #00bff3
+    &__two
+        color: #959595
+
+
+
+@media (max-width: 1082px)
+    .info
+        &__block
+            flex-wrap: wrap
+    .widget
+        &__img
+            &-block
+                margin-right: 30px
+@media (max-width: 691px)
+    .info
+        &__block
+            flex-direction: column
+    .waxom
+        &__block
+            text-align: center
+            margin-right: 50px
+            margin-left: 50px
+    .recent
+        &__blocks
+            text-align: center
+            margin-right: 50px
+            margin-left: 50px
+    .twitter
+        &__block
+            text-align: center
+            margin-right: 50px
+            margin-left: 50px
+    .mobile
+        &__block
+            text-align: center
+    .widget
+        &__img
+            &-block
+                margin-right: 0px
+    
+    

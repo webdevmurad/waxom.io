@@ -23,13 +23,6 @@
                 cursor: pointer
             &:hover .src-img
                 opacity: 1
-            &:before
-                content: ''
-                position: absolute
-                width: 95%
-                height: 70%
-            &:hover:before
-                background: rgba(0,0,0,0.5) 
         &-categories
             display: flex
             justify-content: center
@@ -45,6 +38,8 @@
             box-shadow: inset 0 -3px 0 #736357
             border-radius: 3px
             padding: 10px 40px
+            &:hover
+                cursor: pointer
         &-blocks
             display: flex
             justify-content: center
@@ -70,7 +65,9 @@
             &:hover .description__name
                 color: #fbfaf8
             &:hover .description__text
-                color: #c7b299              
+                color: #c7b299
+            &:hover .latest__projects-img
+                filter: brightness(40%)              
         &-description
             text-align: left
             margin-top: -4px
@@ -136,7 +133,5 @@
                 width: 300px
             &-photo
                 &:before
-                content: ''
-                position: absolute
                 width: 94%
                 height: 65%
