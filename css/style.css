@@ -89,7 +89,7 @@ header {
 }
 
 .header__nav-block {
-  width: 1082px;
+  width: 1024px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -245,16 +245,16 @@ header {
   background: linear-gradient(rgba(0, 0, 0, 0.2)), url("./../img/header/header_photo_5.jpg");
 }
 
-@media (max-width: 1082px) {
+@media (max-width: 1024px) {
   .header__nav-block {
-    width: 891px;
+    width: 768px;
   }
   .header__block {
     background-position: center;
   }
 }
 
-@media (max-width: 891px) {
+@media (max-width: 768px) {
   .header__menu {
     display: none;
   }
@@ -270,11 +270,17 @@ header {
     display: none;
   }
   .header__nav-block {
-    width: 668px;
+    width: 425px;
+  }
+  .next {
+    top: 34em;
+  }
+  .prev {
+    top: 34em;
   }
 }
 
-@media (max-width: 691px) {
+@media (max-width: 425px) {
   .header__above-text {
     font-size: 20px;
   }
@@ -404,7 +410,7 @@ header {
   margin: 25px;
 }
 
-@media (max-width: 891px) {
+@media (max-width: 768px) {
   .opportunities__wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -446,15 +452,15 @@ header {
   margin-bottom: -4px;
 }
 
-@media (max-width: 1290px) {
+@media (max-width: 1440px) {
   .idea__photo-slide {
-    width: 800px;
+    width: 768px;
   }
 }
 
-@media (max-width: 891px) {
+@media (max-width: 768px) {
   .idea__photo-slide {
-    width: 600px;
+    width: 425px;
   }
   .idea__text {
     margin-left: 100px;
@@ -462,19 +468,13 @@ header {
   }
 }
 
-@media (max-width: 691px) {
+@media (max-width: 425px) {
   .idea__photo-slide {
-    width: 400px;
+    width: 300px;
   }
   .idea__text {
     margin-left: 50px;
     margin-right: 50px;
-  }
-}
-
-@media (max-width: 400px) {
-  .idea__photo-slide {
-    width: 300px;
   }
 }
 
@@ -489,24 +489,23 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .wp__title {
   color: #ffffff;
   font-size: 28px;
   font-weight: 400;
-  padding-top: 48px;
 }
 
 .wp__text {
   color: #615855;
   font-size: 18px;
   font-weight: 300;
-  padding-bottom: 48px;
 }
 
 .wp__button {
-  margin-top: 50px;
   padding: 15px 29px;
   color: #ffffff;
   font-size: 14px;
@@ -524,7 +523,14 @@ header {
   cursor: pointer;
 }
 
-@media (max-width: 1290px) {
+@media (max-width: 1440px) {
+  .wordpress__wraps {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media (max-width: 1024px) {
   .wordpress__wraps {
     text-align: center;
     -webkit-box-align: center;
@@ -537,6 +543,9 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .wp__button {
+    margin-top: 20px;
   }
   .wp__text {
     padding-bottom: 0px;
@@ -627,9 +636,9 @@ header {
   content: '';
   position: absolute;
   bottom: 83px;
-  left: 5%;
-  border: 17px solid transparent;
-  border-bottom: 14px solid #fbfaf8;
+  left: 7%;
+  border: 20px solid transparent;
+  border-bottom: 20px solid #fbfaf8;
 }
 
 .latest__projects-block:hover::after {
@@ -709,14 +718,18 @@ header {
   right: 40%;
 }
 
-@media (max-width: 891px) {
+@media (max-width: 1024px) {
   .latest__projects-subtitle {
     margin-left: 100px;
     margin-right: 100px;
   }
 }
 
-@media (max-width: 691px) {
+@media (max-width: 768px) {
+  .latest__projects-subtitle {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
   .latest__projects-categories {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -726,13 +739,13 @@ header {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+@media (max-width: 425px) {
   .latest__projects-subtitle {
     margin-left: 30px;
     margin-right: 30px;
   }
-}
-
-@media (max-width: 400px) {
   .latest__projects-img {
     width: 300px;
   }
@@ -781,14 +794,14 @@ header {
   cursor: pointer;
 }
 
-@media (max-width: 1082px) {
+@media (max-width: 1024px) {
   .video__block-text {
     margin-left: 200px;
     margin-right: 200px;
   }
 }
 
-@media (max-width: 691px) {
+@media (max-width: 768px) {
   .video__block-text {
     margin-left: 50px;
     margin-right: 50px;
@@ -855,7 +868,13 @@ li {
   margin-left: 50px;
 }
 
-@media (max-width: 891px) {
+@media (max-width: 1024px) {
+  .mobile__block-text {
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 768px) {
   .mobile__blocks {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -864,6 +883,7 @@ li {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding-bottom: 80px;
   }
   .mobile__block-left {
     -webkit-box-align: center;
@@ -877,7 +897,7 @@ li {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 425px) {
   .block-img {
     width: 300px;
   }
@@ -943,7 +963,7 @@ li {
   background: url("../img/statistics/lines.png");
 }
 
-@media (max-width: 691px) {
+@media (max-width: 768px) {
   .statistics__blocks {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1124,7 +1144,7 @@ li {
   position: relative;
 }
 
-@media (max-width: 1082px) {
+@media (max-width: 1024px) {
   .block__posts-slide {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1171,7 +1191,7 @@ li {
   }
 }
 
-@media (min-width: 320px) {
+@media (max-width: 320px) {
   .arrows__back {
     left: 42%;
   }
@@ -1198,7 +1218,7 @@ li {
   padding-bottom: 135px;
 }
 
-@media (max-width: 891px) {
+@media (max-width: 1024px) {
   .sponsor__blocks {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1206,6 +1226,9 @@ li {
             flex-direction: column;
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+  .sponsor__block {
+    margin: 20px;
   }
 }
 
@@ -1384,7 +1407,7 @@ li {
   color: #959595;
 }
 
-@media (max-width: 1082px) {
+@media (max-width: 1440px) {
   .info__block {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1394,12 +1417,15 @@ li {
   }
 }
 
-@media (max-width: 691px) {
+@media (max-width: 768px) {
   .info__block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .info__blocks {
+    margin-top: 10px;
   }
   .waxom__block {
     text-align: center;
@@ -1492,7 +1518,7 @@ li {
   color: #959595;
 }
 
-@media (max-width: 691px) {
+@media (max-width: 768px) {
   .footer__blocks {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

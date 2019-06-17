@@ -3,19 +3,18 @@
     &__wraps
         display: flex
         justify-content: space-between
+        padding-top: 50px
+        padding-bottom: 50px
 .wp
     &__title
         color: #ffffff
         font-size: 28px
         font-weight: 400
-        padding-top: 48px
     &__text
         color: #615855
         font-size: 18px
         font-weight: 300
-        padding-bottom: 48px
     &__button
-        margin-top: 50px
         padding: 15px 29px
         color: #ffffff
         font-size: 14px
@@ -28,7 +27,11 @@
         text-transform: uppercase
         &:hover
             cursor: pointer
-@media (max-width: 1290px)
+@media (max-width: 1440px)
+    .wordpress
+        &__wraps
+            justify-content: space-around
+@media (max-width: 1024px)
     .wordpress
         &__wraps
             text-align: center
@@ -36,5 +39,7 @@
             justify-content: center
             flex-direction: column
     .wp
+        &__button
+            margin-top: 20px
         &__text
             padding-bottom: 0px
