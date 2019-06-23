@@ -10,7 +10,7 @@
 <body>
 
     <header>
-        <section class="header">
+        <section class="header">  
             <div class="slider">
                 <div class="header__block">
                     <div class="container">
@@ -85,7 +85,10 @@
                     <div class="header__block-logo">
                         <img src="./img/header/Logo.png" alt="#" class="header__logo">
                     </div>
-                    <nav class="header__menu">
+                    <a href="#" id="burger" class="menu-link">
+                        <span></span>
+                    </a>
+                    <ul class="header__menu">
                         <a class="header__menu-paragraph" href="#">Home</a>
                         <a class="header__menu-paragraph" href="#">About Us</a>
                         <a class="header__menu-paragraph" href="#">Portfolio</a>
@@ -94,21 +97,34 @@
                         <a class="header__menu-paragraph" href="#">Pricing</a>
                         <a class="header__menu-paragraph" href="#">Shortcodes</a>
                         <a class="header__menu-paragraph" href="#">Contact</a>
-                    </nav>
-                    <div class="header__menu-mobile">
-                        <a href="" id="burger" class="header__menu-btn">
-                            <span class="header__menu-line"></span>
-                        </a>
-                    </div>
+                    </ul>
                     <div class="header__icons">
                         <img src="./img/header/icon-cart.png" alt="#" class="header__icon">
                         <img src="./img/header/icon-search.png" alt="#" class="header__icon">
                     </div>
                 </div>
-            </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Home</a> </li>
+                        <li><a href="#">About Us</a> </li>
+                        <li><a href="#">Portfolio</a> </li>
+                        <li><a href="#">Features</a> </li>
+                        <li><a href="#">Blog</a> </li>
+                        <li><a href="#">Pricing</a> </li>
+                        <li><a href="#">Shortcodes</a> </li>
+                        <li><a href="#">Contact</a> </li>
+                    </ul>
+                    <div class="menu-icons">
+                        <img src="img/header/icon-cart.png" alt="#" class="menu-icon">
+                        <img src="img/header/icon-search.png" alt="#" class="menu-icon">
+                    </div>
+                </div>    
+            </div>  
         </div>
     </header>
 
+    
+    
     <main>
 
         <section class="opportunities">
@@ -181,7 +197,40 @@
                     <div class="latest__projects-blocks">                       
                         <div class="latest__projects-block">
                             <div class="latest__projects-photo">
-                                <img src="./img/description/project_1.png" alt="#" class="latest__projects-img">
+                                <img id="big" src="./img/description/project_1.png" alt="#" class="latest__projects-img">
+                                <img src="./img/description/link.png" class="src-img link">
+                                <img src="./img/description/lupa.png" id="lupa" onclick="srcImg" class="src-img lupa">
+                            </div>
+                            <div class="latest__projects-description">
+                                <div class="description__name">Claritas Etiam Processus</div>
+                                <div class="description__text">Photography, Nature</div>
+                            </div>
+                        </div>
+                        <div class="latest__projects-block">
+                            <div class="latest__projects-photo">
+                                <img onclick="big-img" src="./img/description/project_2.png" alt="#" class="latest__projects-img">
+                                <img src="./img/description/link.png" class="src-img link">
+                                <img src="./img/description/lupa.png" class="src-img lupa">
+                            </div>
+                            <div class="latest__projects-description">
+                                <div class="description__name">Quam Nutamus Farum</div>
+                                <div class="description__text">Graphic Design, Mock-Up</div>
+                            </div>
+                        </div>
+                        <div class="latest__projects-block">
+                            <div class="latest__projects-photo">
+                                <img src="./img/description/project_3.png" alt="#" class="latest__projects-img">
+                                <img src="./img/description/link.png" class="src-img link">
+                                <img src="./img/description/lupa.png" class="src-img lupa">
+                            </div>
+                            <div class="latest__projects-description">
+                                <div class="description__name">Usus Legentis Videntur</div>
+                                <div class="description__text">Photography, Holiday</div>
+                            </div>
+                        </div>
+                        <div class="latest__projects-block">
+                            <div class="latest__projects-photo">
+                                <img src="./img/description/project_4.png" alt="#" class="latest__projects-img">
                                 <img src="./img/description/link.png" class="src-img link">
                                 <img src="./img/description/lupa.png" class="src-img lupa">
                             </div>
@@ -192,42 +241,9 @@
                         </div>
                         <div class="latest__projects-block">
                             <div class="latest__projects-photo">
-                                <img src="./img/description/project_2.png" alt="#" class="latest__projects-img">
-                                <img src="./img/description/link.png" class="src-img link"></img>
-                                <img src="./img/description/lupa.png" class="src-img lupa"></a>
-                            </div>
-                            <div class="latest__projects-description">
-                                <div class="description__name">Quam Nutamus Farum</div>
-                                <div class="description__text">Graphic Design, Mock-Up</div>
-                            </div>
-                        </div>
-                        <div class="latest__projects-block">
-                            <div class="latest__projects-photo">
-                                <img src="./img/description/project_3.png" alt="#" class="latest__projects-img">
-                                <img src="./img/description/link.png" class="src-img link"></img>
-                                <img src="./img/description/lupa.png" class="src-img lupa"></a>
-                            </div>
-                            <div class="latest__projects-description">
-                                <div class="description__name">Usus Legentis Videntur</div>
-                                <div class="description__text">Photography, Holiday</div>
-                            </div>
-                        </div>
-                        <div class="latest__projects-block">
-                            <div class="latest__projects-photo">
-                                <img src="./img/description/project_4.png" alt="#" class="latest__projects-img">
-                                <img src="./img/description/link.png" class="src-img link"></img>
-                                <img src="./img/description/lupa.png" class="src-img lupa"></a>
-                            </div>
-                            <div class="latest__projects-description">
-                                <div class="description__name">Claritas Etiam Processus</div>
-                                <div class="description__text">Photography, Nature</div>
-                            </div>
-                        </div>
-                        <div class="latest__projects-block">
-                            <div class="latest__projects-photo">
                                 <img src="./img/description/project_5.png" alt="#" class="latest__projects-img">
-                                <img src="./img/description/link.png" class="src-img link"></img>
-                                <img src="./img/description/lupa.png" class="src-img lupa"></a>
+                                <img src="./img/description/link.png" class="src-img link">
+                                <img src="./img/description/lupa.png" class="src-img lupa">
                             </div>
                             <div class="latest__projects-description">
                                 <div class="description__name">Quam Nutamus Farum</div>
@@ -237,8 +253,8 @@
                         <div class="latest__projects-block">
                             <div class="latest__projects-photo">
                                 <img src="./img/description/project_6.png" alt="#" class="latest__projects-img">
-                                <img src="./img/description/link.png" class="src-img link"></img>
-                                <img src="./img/description/lupa.png" class="src-img lupa"></a>
+                                <img src="./img/description/link.png" class="src-img link">
+                                <img src="./img/description/lupa.png" class="src-img lupa">
                             </div>
                             <div class="latest__projects-description">
                                 <div class="description__name">Usus Legentis Videntur</div>
@@ -339,7 +355,7 @@
                                 <div class="block__post-body">
                                     <div class="block__post-title">Lorem ipsum dolor sit amet</div>
                                     <div class="block__post-text">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</div>
-                                    <div class="block__post-read">Read More</div>
+                                    <div class="block__post-read">Read More &#8227;</div>
                                 </div>  
                             </div>
                         </div>
@@ -355,7 +371,7 @@
                                 <div class="block__post-body">
                                     <div class="block__post-title">Lorem ipsum dolor sit amet</div>
                                     <div class="block__post-text">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</div>
-                                    <div class="block__post-read">Read More</div>
+                                    <div class="block__post-read">Read More &#8227;</div>
                                 </div>
                             </div>
                         </div>
@@ -371,7 +387,7 @@
                                 <div class="block__post-body">
                                     <div class="block__post-title">Lorem ipsum dolor sit amet</div>
                                     <div class="block__post-text">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</div>
-                                    <div class="block__post-read">Read More</div>
+                                    <div class="block__post-read">Read More &#8227;</div>
                                 </div>
                             </div>
                         </div>   
@@ -380,32 +396,58 @@
                     <div class="block__posts-slide">
                         <div class="block__post">
                             <div class="block__post-wrap">
-                                <div class="block__post-img"><img class="" src="" alt=""></div>
-                                <div class="block__post-title"></div>
-                                <div class="block__post-text"></div>
-                                <div class="block__post-read"></div>
+                                <div class="block__post-img">
+                                    <img class="img__post" src="img/post/photo__slide-4.png" alt="#">
+                                    <div class="block__post-data">
+                                        <div class="block__post-number">30</div>
+                                        <div class="block__post-month">Sep.</div>
+                                    </div>
+                                </div>
+                                <div class="block__post-body">
+                                    <div class="block__post-title">Lorem ipsum dolor sit amet</div>
+                                    <div class="block__post-text">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
+                                    </div>
+                                    <div class="block__post-read">Read More &#8227;</div>
+                                </div>
                             </div>
                         </div>
                         <div class="block__post">
                             <div class="block__post-wrap">
-                                <div class="block__post-img"><img class="" src="" alt=""></div>
-                                <div class="block__post-title"></div>
-                                <div class="block__post-text"></div>
-                                <div class="block__post-read"></div>
+                                <div class="block__post-img">
+                                    <img class="img__post" src="img/post/photo__slide-5.png" alt="#">
+                                    <div class="block__post-data">
+                                        <div class="block__post-number">30</div>
+                                        <div class="block__post-month">Sep.</div>
+                                    </div>
+                                </div>
+                                <div class="block__post-body">
+                                    <div class="block__post-title">Lorem ipsum dolor sit amet</div>
+                                    <div class="block__post-text">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
+                                    </div>
+                                    <div class="block__post-read">Read More &#8227;</div>
+                                </div>
                             </div>
                         </div>
                         <div class="block__post">
                             <div class="block__post-wrap">
-                                <div class="block__post-img"><img class="" src="" alt=""></div>
-                                <div class="block__post-title"></div>
-                                <div class="block__post-text"></div>
-                                <div class="block__post-read"></div>
+                                <div class="block__post-img">
+                                    <img class="img__post" src="img/post/photo__slide-6.png" alt="#">
+                                    <div class="block__post-data">
+                                        <div class="block__post-number">30</div>
+                                        <div class="block__post-month">Sep.</div>
+                                    </div>
+                                </div>
+                                <div class="block__post-body">
+                                    <div class="block__post-title">Lorem ipsum dolor sit amet</div>
+                                    <div class="block__post-text">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
+                                    </div>
+                                    <div class="block__post-read">Read More &#8227;</div>
+                                </div>
                             </div>
                         </div>
                     </div>
-
                     <div class="arrows__back"><div class="left__arrow"></div></div>
-                    <div class="arrows__forward active"><div class="right__arrow"></div></div>
+                    <div class="arrows__forward"><div class="right__arrow"></div></div>
                     
                 </div>
             </div>
@@ -485,6 +527,11 @@
             </div>
         </section>
 
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <div class="modal-content" id='img'></div>
+            <div class="caption"></div>
+        </div>
 
     </main>
 
@@ -507,6 +554,7 @@
         </section>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>

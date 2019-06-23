@@ -51,19 +51,79 @@ window.addEventListener('DOMContentLoaded', function() {
     });
 
     // Меню бургер
-    
 
-    burger.onclick = function(event) {
-        event.preventDefault();
-    }
-    let burgerMenu = document.getElementsByClassName('header__menu-btn');
-    for (let i = 0; i < burgerMenu.length; i++) {
-        burgerMenu[i].addEventListener('click', function(){
-            this.classList.toggle('menu-active');
+    $(document).ready(function(){
+        let link = $('.menu-link');
+        let link_active = $('.menu-link_active');
+        let menu = $('.menu');
+
+        link.click(function(){
+            link.toggleClass('menu-link_active');
+            menu.toggleClass('menu_active');
         });
+        link_active.click(function(){
+            link.removeClass('menu-link_active');
+        })
+    })
+    
+    // Приближение фотографии
+    function image() {
+        let modal = document.getElementById('myModal'),
+            bigImg = document.getElementsByClassName('.latest__projects-img'),
+            lupa = document.getElementById('lupa'),
+            modalImg = document.getElementById('img'),
+            span = document.getElementsByClassName('close')[0];
+
+            lupa.onclick = function() {
+                modal.style.display = 'block';
+                body.modal.style.overflow = 'hidden';
+                if (bigImg && modalImg) bigImg.appendChild(modalImg);
+            }
+            
+            span.onclick = function () {
+                modal.style.display = 'none';                
+            }
+
+    }
+    
+    image();
+
+    // cлайдер в блоке post
+    
+    let slidePost = 1,
+        postSlides = document.querySelectorAll('.block__posts-slide'),
+        arrowsBack = document.querySelector('.left__arrow'),
+        arrowsForward = document.querySelector('.right__arrow');
+
+    diplaySlides(slidePost);
+
+    function diplaySlides(n) {
+
+        if (n > postSlides.length) {
+            slidePost = 1;
+        }
+        if (n < 1) {
+            slidePost = postSlides.length;
+        }
+
+        postSlides.forEach((item) => item.style.display = 'none');
+
+        postSlides[slidePost - 1].style.display = 'flex';
+
     }
 
-        
+    function forwardSlide(n) {
+        diplaySlides(slidePost += n);
+    }
+
+    arrowsBack.addEventListener('click', function() {
+        forwardSlide(-1);
+    });
+
+    arrowsForward.addEventListener('click', function() {
+        forwardSlide(1);
+    });
     
+
     
 });

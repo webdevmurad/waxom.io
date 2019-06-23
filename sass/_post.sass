@@ -2,6 +2,7 @@
     &__posts
         position: relative
         padding-top: 80px
+        margin-bottom: 80px
         &-title
             text-align: center
             color: #555555
@@ -19,13 +20,14 @@
             font-weight: 300
             line-height: 28px
         &-slide
-            margin-top: 40px
-            display: flex
+            transform: translateX(3)
     &__post
         &-img
             position: relative
         &-wrap
             padding: 30px
+            &:hover
+                cursor: pointer
             &:hover .block__post-title
                 color: #c7b299
             &:hover .block__post-body
@@ -83,24 +85,23 @@
             font-size: 14px
             font-weight: 300
             line-height: 20px
-
 .arrows
     &__back
         position: absolute
-        bottom: 15%
+        bottom: 0%
         left: 47.80%
         filter: grayscale(3.0)
         &:hover
             cursor: pointer
+            filter: none
     &__forward
         position: absolute
-        bottom: 15%
+        bottom: 0%
         right: 47.80%
         filter: grayscale(3.0)
         &:hover
             cursor: pointer
-.active
-    filter: none
+            filter: none
 .left
     &__arrow
         width: 22px
