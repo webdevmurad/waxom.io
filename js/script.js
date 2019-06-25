@@ -67,26 +67,18 @@ window.addEventListener('DOMContentLoaded', function() {
     })
     
     // Приближение фотографии
-    function image() {
-        let modal = document.getElementById('myModal'),
-            bigImg = document.getElementsByClassName('.latest__projects-img'),
-            lupa = document.getElementById('lupa'),
-            modalImg = document.getElementById('img'),
-            span = document.getElementsByClassName('close')[0];
-
-            lupa.onclick = function() {
-                modal.style.display = 'block';
-                body.modal.style.overflow = 'hidden';
-                if (bigImg && modalImg) bigImg.appendChild(modalImg);
-            }
-            
-            span.onclick = function () {
-                modal.style.display = 'none';                
-            }
-
-    }
+    let modal = document.getElementById('myModal'),
+        img = document.querySelectorAll('.latest__projects-img'),
+        modalImg = document.getElementById('big-img'),
+        span = document.getElementsByClassName('close')[0];
     
-    image();
+    img.onclick = function() {
+        modal.style.display = 'block';
+        modalImg.src = this.src;
+    }
+    span.onclick = function() {
+        modal.style.display = 'none';
+    }
 
     // cлайдер в блоке post
     

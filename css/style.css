@@ -1803,8 +1803,8 @@ li {
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.9);
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.9);
 }
 
 .modal-content {
@@ -1812,6 +1812,10 @@ li {
   display: block;
   width: 80%;
   max-width: 700px;
+  -webkit-animation-name: zoom;
+          animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
 }
 
 #caption {
@@ -1823,9 +1827,6 @@ li {
   color: #ccc;
   padding: 10px 0;
   height: 150px;
-}
-
-.modal-content, #caption {
   -webkit-animation-name: zoom;
           animation-name: zoom;
   -webkit-animation-duration: 0.6s;
@@ -1852,28 +1853,5 @@ li {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-}
-
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.close:hover {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
