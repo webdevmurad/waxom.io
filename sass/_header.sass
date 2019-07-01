@@ -9,7 +9,9 @@ header
         &:hover
             cursor: pointer
     &__menu
+        font-family: 'Montserrat'
         &-paragraph
+            
             &:hover
                 color: #c7b299
         a
@@ -50,16 +52,20 @@ header
                 cursor: pointer
     &__above
         &-text
+            font-family: 'Raleway'
             font-size: 36px
-            font-weight: 500
+            font-weight: 400
     &__title
         &-text
+            font-family: 'Raleway Extra Bold'
             font-size: 52px
             font-weight: 400
     &__subtext
+        font-family: 'Montserrat'
         font-size: 16px
         font-weight: 300
     &__btn
+        font-family: "Raleway Extra Bold"
         margin-top: 50px
         padding: 15px 30px
         font-size: 14px
@@ -193,6 +199,9 @@ header
 
 @media (max-width: 1024px)
     .header
+        &__menu
+            a
+                font-size: 12px
         &__nav
             &-block
                 width: 768px

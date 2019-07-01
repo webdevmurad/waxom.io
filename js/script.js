@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', function() {
     'use strict';
-//   Слайдер
+    //   Слайдер
     let slideIndex = 1,
         slides = document.querySelectorAll('.header__block'),
         prev = document.querySelector('.prev'),
@@ -66,19 +66,6 @@ window.addEventListener('DOMContentLoaded', function() {
         })
     })
     
-    // Приближение фотографии
-    let modal = document.getElementById('myModal'),
-        img = document.querySelectorAll('.latest__projects-img'),
-        modalImg = document.getElementById('big-img'),
-        span = document.getElementsByClassName('close')[0];
-    
-    img.onclick = function() {
-        modal.style.display = 'block';
-        modalImg.src = this.src;
-    }
-    span.onclick = function() {
-        modal.style.display = 'none';
-    }
 
     // cлайдер в блоке post
     
@@ -102,11 +89,11 @@ window.addEventListener('DOMContentLoaded', function() {
 
         postSlides[slidePost - 1].style.display = 'flex';
 
-    }
+    };
 
     function forwardSlide(n) {
         diplaySlides(slidePost += n);
-    }
+    };
 
     arrowsBack.addEventListener('click', function() {
         forwardSlide(-1);
@@ -116,6 +103,6 @@ window.addEventListener('DOMContentLoaded', function() {
         forwardSlide(1);
     });
     
-
     
+
 });
