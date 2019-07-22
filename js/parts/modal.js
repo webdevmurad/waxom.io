@@ -1,6 +1,4 @@
-window.addEventListener('DOMContentLoaded', function() {
-    'use strict';
-    
+function modal() {   
     let lupa = document.querySelectorAll('.lupa'),
         modal = document.querySelector('.modal'),
         bodyModal = document.querySelector('.modal__body'),
@@ -32,5 +30,6 @@ window.addEventListener('DOMContentLoaded', function() {
             closeModal();
         }
     });
-});
-    
+} 
+
+module.exports = modal;
