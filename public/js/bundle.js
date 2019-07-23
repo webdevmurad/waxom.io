@@ -154,6 +154,55 @@ module.exports = modal;
 
 /***/ }),
 
+/***/ "./js/parts/postSlider.js":
+/*!********************************!*\
+  !*** ./js/parts/postSlider.js ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function postSlider() {
+  var currentSlide = 1,
+      slider = document.querySelectorAll('.block__posts-slide'),
+      buttonBack = document.querySelector('.arrows__back'),
+      buttonForward = document.querySelector('.arrows__forward');
+  slidesShow(currentSlide);
+
+  function slidesShow(n) {
+    if (n > slider.length) {
+      currentSlide = 1;
+    }
+
+    if (n < 1) {
+      currentSlide = slider.length;
+    }
+
+    slider.forEach(function (item) {
+      return item.style.display = 'none';
+    });
+    slider[currentSlide - 1].style.display = 'flex';
+  }
+
+  function forwardSlider(n) {
+    slidesShow(currentSlide += n);
+  }
+
+  function presentSlide(n) {
+    slidesShow(currentSlide = n);
+  }
+
+  buttonBack.addEventListener('click', function () {
+    forwardSlider(-1);
+  });
+  buttonForward.addEventListener('click', function () {
+    forwardSlider(1);
+  });
+}
+
+module.exports = postSlider;
+
+/***/ }),
+
 /***/ "./js/parts/slider.js":
 /*!****************************!*\
   !*** ./js/parts/slider.js ***!
@@ -232,11 +281,13 @@ window.addEventListener('DOMContentLoaded', function () {
 
   var burger = __webpack_require__(/*! ./parts/burger.js */ "./js/parts/burger.js"),
       modal = __webpack_require__(/*! ./parts/modal.js */ "./js/parts/modal.js"),
-      slider = __webpack_require__(/*! ./parts/slider.js */ "./js/parts/slider.js");
+      slider = __webpack_require__(/*! ./parts/slider.js */ "./js/parts/slider.js"),
+      postSlider = __webpack_require__(/*! ./parts/postSlider.js */ "./js/parts/postSlider.js");
 
   burger();
   modal();
   slider();
+  postSlider();
 });
 
 if ('NodeList' in window && !NodeList.prototype.forEach) {

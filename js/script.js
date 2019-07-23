@@ -4,12 +4,14 @@ window.addEventListener('DOMContentLoaded', function() {
     'use strict';
     let burger = require('./parts/burger.js'),
         modal = require('./parts/modal.js'),
-        slider = require('./parts/slider.js');
+        slider = require('./parts/slider.js'),
+        postSlider = require('./parts/postSlider.js');
 
 
     burger();
     modal();
     slider();
+    postSlider();
 });
 
 if ('NodeList' in window && !NodeList.prototype.forEach) {
