@@ -120,32 +120,24 @@ module.exports = burger;
 /***/ (function(module, exports) {
 
 function modal() {
-  var lupa = document.querySelectorAll('.lupa'),
-      modal = document.querySelector('.modal'),
-      bodyModal = document.querySelector('.modal__body'),
-      imgB = document.querySelectorAll('.latest__projects-img');
-
-  function openModal() {
-    modal.style.display = 'block';
-  }
-
-  function closeModal() {
-    modal.style.display = 'none';
-  }
-
-  function bindModal(img) {
-    img.forEach(function (item) {
-      item.addEventListener('click', function (e) {
-        e.preventDefault();
-        openModal();
-      });
+  var imgPopup = document.createElement('div'),
+      image = document.createElement('img'),
+      lupa = document.querySelectorAll('.lupa'),
+      srcImg = document.querySelectorAll('.latest__projects-img');
+  imgPopup.classList.add('img-popup');
+  image.classList.add('img-content');
+  document.body.appendChild(imgPopup);
+  imgPopup.appendChild(image);
+  lupa.forEach(function (img) {
+    img.addEventListener('click', function (event) {
+      event.preventDefault();
+      imgPopup.style.display = 'flex';
+      image.href = lupa.href;
     });
-  }
-
-  bindModal(lupa);
-  modal.addEventListener('click', function (e) {
-    if (!e.target.classList.contains('modal__body')) {
-      closeModal();
+  });
+  imgPopup.addEventListener('click', function (event) {
+    if (event.target && event.target.classList.contains('img-popup')) {
+      imgPopup.style.display = 'none';
     }
   });
 }
