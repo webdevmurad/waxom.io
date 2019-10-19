@@ -10,8 +10,36 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,900&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <header>
-        <section class="header">  
+
+        <section class="header"> 
+            <div class="header__nav">
+                <div class="container">
+                    <div class="header__nav-block">
+                        <div class="header__block-logo">
+                            <img src="img/header/Logo.png" alt="#" class="header__logo">
+                        </div>
+                        <a href="#" id="burger" class="menu-link">
+                            <span></span>
+                        </a>
+                        <nav class="header__menu">
+                            <a class="header__menu-paragraph" href="#">Home</a>
+                            <a class="header__menu-paragraph" href="#">About Us</a>
+                            <a class="header__menu-paragraph" href="#">Portfolio</a>
+                            <a class="header__menu-paragraph" href="#">Features</a>
+                            <a class="header__menu-paragraph" href="#">Blog</a>
+                            <a class="header__menu-paragraph" href="#">Pricing</a>
+                            <a class="header__menu-paragraph" href="#">Shortcodes</a>
+                            <a class="header__menu-paragraph" href="#">Contact</a>
+                        </nav>
+                        <div class="header__icons">
+                            <img src="img/header/icon-cart.png" alt="#" class="header__icon">
+                            <img src="img/header/icon-search.png" alt="#" class="header__icon">
+                        </div>
+                    </div>  
+                </div>  
+            </div> 
             <div class="slider">
                 <div class="header__block">
                     <div class="container">
@@ -80,51 +108,29 @@
             </div>
         </section>
 
-        <div class="header__nav">
-            <div class="container">
-                <div class="header__nav-block">
-                    <div class="header__block-logo">
-                        <img src="img/header/Logo.png" alt="#" class="header__logo">
-                    </div>
-                    <a href="#" id="burger" class="menu-link">
-                        <span></span>
-                    </a>
-                    <ul class="header__menu">
-                        <a class="header__menu-paragraph" href="#">Home</a>
-                        <a class="header__menu-paragraph" href="#">About Us</a>
-                        <a class="header__menu-paragraph" href="#">Portfolio</a>
-                        <a class="header__menu-paragraph" href="#">Features</a>
-                        <a class="header__menu-paragraph" href="#">Blog</a>
-                        <a class="header__menu-paragraph" href="#">Pricing</a>
-                        <a class="header__menu-paragraph" href="#">Shortcodes</a>
-                        <a class="header__menu-paragraph" href="#">Contact</a>
-                    </ul>
-                    <div class="header__icons">
-                        <img src="img/header/icon-cart.png" alt="#" class="header__icon">
-                        <img src="img/header/icon-search.png" alt="#" class="header__icon">
-                    </div>
+        <div class="overlay">
+            <div class="menu">
+                <a href="#" id="burger" class="menu-link_active">
+                    <span></span>
+                </a>
+                <ul>
+                    <li><a href="#">Home</a> </li>
+                    <li><a href="#">About Us</a> </li>
+                    <li><a href="#">Portfolio</a> </li>
+                    <li><a href="#">Features</a> </li>
+                    <li><a href="#">Blog</a> </li>
+                    <li><a href="#">Pricing</a> </li>
+                    <li><a href="#">Shortcodes</a> </li>
+                    <li><a href="#">Contact</a> </li>
+                </ul>
+                <div class="menu-icons">
+                    <img src="img/header/icon-cart.png" alt="#" class="menu-icon">
+                    <img src="img/header/icon-search.png" alt="#" class="menu-icon">
                 </div>
-                <div class="menu">
-                    <ul>
-                        <li><a href="#">Home</a> </li>
-                        <li><a href="#">About Us</a> </li>
-                        <li><a href="#">Portfolio</a> </li>
-                        <li><a href="#">Features</a> </li>
-                        <li><a href="#">Blog</a> </li>
-                        <li><a href="#">Pricing</a> </li>
-                        <li><a href="#">Shortcodes</a> </li>
-                        <li><a href="#">Contact</a> </li>
-                    </ul>
-                    <div class="menu-icons">
-                        <img src="img/header/icon-cart.png" alt="#" class="menu-icon">
-                        <img src="img/header/icon-search.png" alt="#" class="menu-icon">
-                    </div>
-                </div>    
             </div>  
         </div>
-    </header>
 
-    
+    </header>
     
     <main>
 
@@ -531,9 +537,11 @@
         <div class="img-popup">
             <img href='' id="img" src="" alt="" class="img-content">
         </div>
+
     </main>
 
     <footer>
+
         <section class="footer">
             <div class="container">
                 <div class="footer__blocks">
@@ -550,6 +558,7 @@
                 </div>
             </div>
         </section>
+
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

@@ -1,0 +1,127 @@
+.overlay 
+    display: none
+    position: fixed
+    top: 0
+    width: 100%
+    height: 100%
+    z-index: 90
+    &-active
+        display: block
+
+.menu
+    display: none
+    top: -16px
+    background-color: #505C62
+    position: fixed
+    width: 100vw
+    height: 90vh
+    z-index: 1
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    transition: all 0.5s
+    top: -117vw
+    &_active
+        top: 5vw
+    &-icon
+        margin: 5px
+    ul
+        padding: 0
+        text-align: center
+        list-style: none
+        a
+            display: block
+            width: 100%
+            font-size: 20px
+            line-height: 4
+            font-weight: 100
+            color: #ffffff
+            letter-spacing: 10px
+            text-decoration: none
+            transition: all 0.2s
+            &:hover
+                width: 100%
+                background-color: #292F32 
+        li
+            background: none 
+            width: 100vw 
+    &-link 
+        &_active 
+            display: block
+            position: relative
+            width: 50px
+            height: 50px
+            z-index: 100
+            background-color: #ffffff
+            border-radius: 50%
+            box-shadow: 1px 1px 10px rgba(0,0,0,.4)
+        &_active span
+            margin-top: -4px
+            background-color: transparent   
+            &:before
+                display: block
+                height: 3px
+                width: 18px
+                position: absolute
+                left: 50%
+                margin-left: -9px
+                top: 50%
+                content: ''
+                margin-top: -8px
+                background-color: #2d2d2d
+                transform: rotate(225deg)
+                margin-top: 0
+            &:after
+                display: block
+                height: 3px
+                width: 18px
+                position: absolute
+                left: 50%
+                margin-left: -9px
+                top: 50%
+                content: ''
+                margin-top: 4px
+                background-color: #2d2d2d
+                transform: rotate(-225deg)
+                margin-top: 0
+@media (max-width: 768px)
+    .menu 
+        height: 70vh
+        ul 
+            a 
+                font-size: 15px
+@media (max-width: 425px)
+    .menu
+        background-color: #505C62
+        position: fixed
+        width: 100vw
+        height: 50vh
+        z-index: 1
+        display: flex
+        justify-content: center
+        align-items: center
+        transition: all 0.5s
+        top: -117vw
+        &_active
+            top: 0vw
+        ul
+            padding: 0
+            text-align: center
+            list-style: none
+            a
+                display: block
+                width: 100%
+                font-size: 10px
+                line-height: 4
+                font-weight: 100
+                color: #ffffff
+                letter-spacing: 5px
+                text-decoration: none
+                transition: all 0.2s
+                &:hover
+                    width: 100%
+                    background-color: #292F32 
+            li
+                background: none 
+                width: 100vw 

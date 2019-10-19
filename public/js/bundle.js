@@ -96,14 +96,16 @@
 function burger() {
   $(document).ready(function () {
     var link = $('.menu-link');
-    var link_active = $('.menu-link_active');
     var menu = $('.menu');
+    var link_active = $('.menu-link_active');
+    var overlay = $('.overlay');
     link.click(function () {
-      link.toggleClass('menu-link_active');
       menu.toggleClass('menu_active');
+      overlay.toggleClass('overlay-active');
     });
     link_active.click(function () {
-      link.removeClass('menu-link_active');
+      overlay.removeClass('overlay-active');
+      menu.removeClass('menu_active');
     });
   });
 }

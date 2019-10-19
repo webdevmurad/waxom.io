@@ -5,6 +5,7 @@ header
 .head
     position: relative
 .header
+    position: relative
     &__icons
         &:hover
             cursor: pointer
@@ -148,7 +149,7 @@ header
         position: relative
         width: 50px
         height: 50px
-        z-index: 9
+        z-index: 100
         background-color: #ffffff
         border-radius: 50%
         box-shadow: 1px 1px 10px rgba(0,0,0,.4)
@@ -186,16 +187,7 @@ header
                 content: ''
                 margin-top: 4px
                 background-color: #2d2d2d
-        &_active
-            span
-                margin-top: -4px
-                background-color: transparent   
-                &:before
-                    transform: rotate(225deg)
-                    margin-top: 0
-                &:after
-                    transform: rotate(-225deg)
-                    margin-top: 0
+
 
 @media (max-width: 1024px)
     .header
@@ -208,46 +200,6 @@ header
         &__block
             background-position: center
 @media (max-width: 768px)
-    .menu
-        top: -16px
-        background-color: #505C62
-        position: fixed
-        width: 100vw
-        height: 90vh
-        z-index: 1
-        left: -41%
-        display: flex
-        justify-content: center
-        align-items: center
-        flex-direction: column
-        transition: all 0.5s
-        top: -117vw
-        &_active
-            top: 0vw
-        &-icon
-            margin: 5px
-        ul
-            padding: 0
-            text-align: center
-            list-style: none
-            a
-                display: block
-                width: 100%
-                font-size: 20px
-                line-height: 4
-                font-weight: 100
-                color: #ffffff
-                letter-spacing: 10px
-                text-decoration: none
-                transition: all 0.2s
-                &:hover
-                    width: 100%
-                    background-color: #292F32 
-            li
-                background: none 
-                width: 100vw 
-    .menu
-        background-color: #505C62
     .header
         &__menu
             display: none
@@ -264,41 +216,6 @@ header
     .prev
         top: 34em
 @media (max-width: 425px)
-    .menu
-        top: -16px
-        background-color: #505C62
-        position: fixed
-        width: 100vw
-        height: 50vh
-        z-index: 1
-        left: -21%
-        display: flex
-        justify-content: center
-        align-items: center
-        transition: all 0.5s
-        top: -117vw
-        &_active
-            top: 0vw
-        ul
-            padding: 0
-            text-align: center
-            list-style: none
-            a
-                display: block
-                width: 100%
-                font-size: 10px
-                line-height: 4
-                font-weight: 100
-                color: #ffffff
-                letter-spacing: 5px
-                text-decoration: none
-                transition: all 0.2s
-                &:hover
-                    width: 100%
-                    background-color: #292F32 
-            li
-                background: none 
-                width: 100vw 
     .header
         &__above
             &-text
@@ -320,65 +237,3 @@ header
     .slider
         &-dots
             bottom: 8em
-@media (max-width: 375px)
-    .menu
-        left: -13%
-        top: -122vw
-        &_active
-            top: 0vw
-        ul
-            padding: 0
-            text-align: center
-            list-style: none
-            a
-                display: block
-                width: 100%
-                font-size: 10px
-                line-height: 4
-                font-weight: 100
-                color: #ffffff
-                letter-spacing: 5px
-                text-decoration: none
-                transition: all 0.2s
-                &:hover
-                    width: 100%
-                    background-color: #292F32 
-            li
-                background: none 
-                width: 100vw 
-@media (max-width: 320px)
-    .menu
-        top: -16px
-        background-color: #505C62
-        position: fixed
-        width: 100vw
-        height: 50vh
-        z-index: 1
-        left: -4%
-        display: flex
-        justify-content: center
-        align-items: center
-        transition: all 0.5s
-        top: -143vw
-        &_active
-            top: 0vw
-        ul
-            padding: 0
-            text-align: center
-            list-style: none
-            a
-                display: block
-                width: 100%
-                font-size: 10px
-                line-height: 4
-                font-weight: 100
-                color: #ffffff
-                letter-spacing: 5px
-                text-decoration: none
-                transition: all 0.2s
-                &:hover
-                    width: 100%
-                    background-color: #292F32 
-            li
-                background: none 
-                width: 100vw 
