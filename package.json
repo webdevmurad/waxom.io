@@ -22,8 +22,11 @@
     "babel-loader": "^8.0.6",
     "babel-plugin-es6-promise": "^1.1.1",
     "es6-promise": "^4.2.8",
+    "gulp": "^4.0.2",
     "webpack": "^4.36.1",
     "webpack-cli": "^3.3.6"
   },
-  "dependencies": {}
+  "dependencies": {
+    "gulp-tinypng-compress": "^1.2.5"
+  }
 }
