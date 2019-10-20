@@ -1,19 +1,18 @@
 function modal() {   
     let imgPopup = document.createElement('div'),
         image = document.createElement('img'),
-        lupa = document.querySelectorAll('.lupa'),
-        srcImg = document.querySelectorAll('.latest__projects-img');
+        srcImg = document.querySelectorAll('.link-img');
 
     imgPopup.classList.add('img-popup');
     image.classList.add('img-content');
     document.body.appendChild(imgPopup);
     imgPopup.appendChild(image);
 
-    lupa.forEach(img => {
-        img.addEventListener('click', function (event) {
+    srcImg.forEach(item => {
+        item.addEventListener('click', function (event) {
             event.preventDefault();
             imgPopup.style.display = 'flex';
-            image.href = lupa.href;
+            image.src = this.href;
         });
     });
     
