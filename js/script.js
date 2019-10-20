@@ -5,13 +5,15 @@ window.addEventListener('DOMContentLoaded', function() {
     let burger = require('./parts/burger.js'),
         modal = require('./parts/modal.js'),
         slider = require('./parts/slider.js'),
-        postSlider = require('./parts/postSlider.js');
+        postSlider = require('./parts/postSlider.js'),
+        image = require('./parts/image.js');
 
 
     burger();
     modal();
     slider();
     postSlider();
+    image();
 });
 
 if ('NodeList' in window && !NodeList.prototype.forEach) {

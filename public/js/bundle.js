@@ -114,6 +114,17 @@ module.exports = burger;
 
 /***/ }),
 
+/***/ "./js/parts/image.js":
+/*!***************************!*\
+  !*** ./js/parts/image.js ***!
+  \***************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
 /***/ "./js/parts/modal.js":
 /*!***************************!*\
   !*** ./js/parts/modal.js ***!
@@ -276,12 +287,14 @@ window.addEventListener('DOMContentLoaded', function () {
   var burger = __webpack_require__(/*! ./parts/burger.js */ "./js/parts/burger.js"),
       modal = __webpack_require__(/*! ./parts/modal.js */ "./js/parts/modal.js"),
       slider = __webpack_require__(/*! ./parts/slider.js */ "./js/parts/slider.js"),
-      postSlider = __webpack_require__(/*! ./parts/postSlider.js */ "./js/parts/postSlider.js");
+      postSlider = __webpack_require__(/*! ./parts/postSlider.js */ "./js/parts/postSlider.js"),
+      image = __webpack_require__(/*! ./parts/image.js */ "./js/parts/image.js");
 
   burger();
   modal();
   slider();
   postSlider();
+  image();
 });
 
 if ('NodeList' in window && !NodeList.prototype.forEach) {
